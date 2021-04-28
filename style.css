@@ -1,0 +1,47 @@
+.formLoader{
+	overflow: hidden;
+	position: relative;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.formLoading{
+	display: flex;
+}
+.formLoader .formLoading li{
+	background: #fff;
+	opacity: 0.5;
+	display: block;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #ed7c0b;
+	margin: 0 0 0 4px;
+	animation: preload 1s infinite;
+	border-radius: 50%;
+}
+.formLoader .formLoading li:first-child {
+	margin-left: 0;
+}
+.formLoader .formLoading li:ntn-child(2) {
+	animation-delay: .15s;
+}
+.formLoader .formLoading li:ntn-child(3) {
+	animation-delay: .3s;
+}
+@keyframes preload{
+	0%{
+		background: #ed7c00;
+		opacity: 1
+	}
+	50%{
+		background: #fff;
+		opacity: 0.5
+	}
+	100%{
+		background: #ed7c00;
+		opacity: 1
+	}
+}
