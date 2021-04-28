@@ -25,10 +25,10 @@
 .formLoader .formLoading li:first-child {
 	margin-left: 0;
 }
-.formLoader .formLoading li:ntn-child(2) {
+.formLoader .formLoading li:nth-child(2) {
 	animation-delay: .15s;
 }
-.formLoader .formLoading li:ntn-child(3) {
+.formLoader .formLoading li:nth-child(3) {
 	animation-delay: .3s;
 }
 @keyframes preload{
